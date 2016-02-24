@@ -14,6 +14,6 @@ build:
   ci:
     - java -version
   pre_ci_boot:
-    image_name: drydock/u12javpls
+    image_name: drydock/u14javall
     image_tag: prod
     pull: true    
