@@ -1,5 +1,7 @@
 # Language setting
 language: java
+services:
+  - elasticsearch
 
 # Version number
 jdk:
@@ -11,4 +13,7 @@ jdk:
 build:
   ci:
     - java -version
-    
+  pre_ci_boot:
+    image_name: drydock/u12javall
+    image_tag: prod
+    pull: true    
