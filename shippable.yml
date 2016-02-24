@@ -3,12 +3,12 @@ language: java
 
 # Version number
 services:
-  - elasticsearch
+  - redis
 jdk:
   - openjdk6
- #- openjdk7
-  #- oraclejdk7
-  #- oraclejdk8
+  - openjdk7
+  - oraclejdk7
+  - oraclejdk8
 
 build:
   pre_ci_boot:
