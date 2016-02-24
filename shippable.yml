@@ -1,5 +1,10 @@
 # Language setting
 language: java
+services:
+  - memcache
+  - selenium
+  - rabbitmq
+  - rethinkdb
 
 # Version number
 jdk:
@@ -11,4 +16,7 @@ jdk:
 build:
   ci:
     - java -version
-    
+  pre_ci_boot:
+    image_name: drydock/u12javpls
+    image_tag: prod
+    pull: true    
