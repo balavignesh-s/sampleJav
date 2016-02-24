@@ -4,7 +4,7 @@ services:
   - memcache
   #- selenium
   - rabbitmq
-  - rethinkdb
+  #- rethinkdb
 
 # Version number
 jdk:
